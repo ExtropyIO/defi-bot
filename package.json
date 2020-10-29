@@ -1,0 +1,44 @@
+{
+  "name": "defi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.35",
+    "axios": "^0.19.2",
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "infura-web3-provider": "0.0.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "moment-timezone": "^0.5.28",
+    "numeral": "^2.0.6",
+    "@0x/order-utils": "^10.2.4",
+    "cors": "",
+    "play-sound": "",
+    "sha3": "2.0.2",
+    "web3": "",
+    "web3-provider-engine": ""
+  },
+  "devDependencies": {
+    "request": "^2.81.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/codemedici/defi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/codemedici/defi/issues"
+  },
+  "homepage": "https://gitlab.com/codemedici/defi#readme"
+}
