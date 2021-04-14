@@ -1,11 +1,19 @@
-
 const ETH = {
     symbol:"ETH",
     address:'0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 }
+const WETH = {
+    symbol:"WETH",
+    address:'0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+}
 const DAI = {
     symbol:"DAI",
     address:'0x6b175474e89094c44da98b954eedeac495271d0f'
+}
+
+const WBTC = {
+    symbol: 'WBTC',
+    address: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
 }
 
 const MKR = {
@@ -29,10 +37,14 @@ const AMPL = {
 }
 
 const erc20s = {
-    ETH, DAI,
+    ETH,
+    WETH,
+    DAI,
     MKR,
     KNC,
-    LINK,AMPL
+    LINK,
+    AMPL,
+    WBTC
 }
 
 function forTokens(inputToken, outputToken, inputAmount){
@@ -47,4 +59,4 @@ function forTokens(inputToken, outputToken, inputAmount){
       };
 }
 
-exports.forTokens = forTokens;
+module.exports = {forTokens}; //exports.forTokens = forTokens;

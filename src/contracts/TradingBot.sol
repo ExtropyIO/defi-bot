@@ -171,7 +171,7 @@ contract DyDxFlashLoan is Structs {
 pragma solidity ^0.5.0;
 
 
-contract IOneSplit {
+contract IOneSplit { // interface for 1inch exchange.
     function getExpectedReturn(
         IERC20 fromToken,
         IERC20 toToken,
@@ -196,7 +196,7 @@ contract IOneSplit {
     ) public payable;
 }
 
-contract TradingBot is DyDxFlashLoan {
+contract TradingBot is DyDxFlashLoan { // Where the actual contract for the trading bot starts. anything above that are just libraries.
     uint256 public loan;
 
     // Addresses
@@ -343,7 +343,7 @@ contract TradingBot is DyDxFlashLoan {
     }
 
     function _approveWeth(uint256 _amount) internal {
-        IERC20(WETH).approve(ZRX_STAKING_PROXY, _amount);
+        IERC20(WETH).approve(ZRX_STAKING_PROXY, _amount); // approves the 0x staking proxy - the proxy is the fee collector for 0x, i.e. we will use WETH in order to pay for trading fees
     }
 
     // KEEP THIS FUNCTION IN CASE THE CONTRACT RECEIVES TOKENS!

@@ -10,9 +10,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@0x/order-utils": "^10.2.4",
     "@truffle/hdwallet-provider": "^1.0.35",
+    "@uniswap/sdk": "^3.0.3",
     "axios": "^0.19.2",
     "console.table": "^0.10.0",
+    "cors": "",
     "dotenv": "^8.2.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
@@ -21,8 +24,6 @@
     "moment": "^2.25.3",
     "moment-timezone": "^0.5.28",
     "numeral": "^2.0.6",
-    "@0x/order-utils": "^10.2.4",
-    "cors": "",
     "play-sound": "",
     "sha3": "2.0.2",
     "web3": "",
