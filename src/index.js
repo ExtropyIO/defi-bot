@@ -324,7 +324,7 @@ async function trade(flashTokenSymbol, flashTokenAddress, arbTokenAddress, order
   // Calculate slippage
   const minReturnWtihSplippage = minReturnWithSlippage = (new web3.utils.BN(minReturn)).mul(new web3.utils.BN('995')).div(new web3.utils.BN('1000')).toString()
 
-  Perform Trade
+  // Perform Trade
   receipt = await traderContract.methods.getFlashloan(
     flashTokenAddress, // address flashToken,
     FLASH_AMOUNT, // uint256 flashAmount, 
