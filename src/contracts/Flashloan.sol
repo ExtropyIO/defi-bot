@@ -174,12 +174,17 @@ contract Flashloan is DyDxFlashLoan {
         require(success, "fail to get weth");
     }
 
+/* 
+每当客户发现有利可图的套利时调用。
+此函数的所有参数都将从客户端脚本构造并传入。
+ */
     function getFlashloan(address flashToken, uint256 flashAmount) external {
         uint256 balanceBefore = IERC20(flashToken).balanceOf(address(this));
         bytes memory data = abi.encode(flashToken, flashAmount, balanceBefore);
         flashloan(flashToken, flashAmount, data); // execution goes to `callFunction`
     }
 
+// 必须在我们的智能合约中部署才能从 dYdX 获得闪电贷
     function callFunction(
         address, /* sender */
         Info calldata, /* accountInfo */
