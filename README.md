@@ -1,3 +1,9 @@
+# DEPRECATED
+
+This bot is not actively maintained and has not been updated to work with newer versions of 1inch and DyDx. We encourage the community to create merge requests for any upgrades.
+
+Extropy remains available for any smart contract development or audit work, please contact info@extropy.io or visit https://extropy.io/ .
+
 > ### TLDR:
 > * The author provides a detailed guide to coding a DeFi arbitrage bot. The bot uses flash loans to borrow assets from dYdX and sells them on 1inch exchange when profitable.
 
