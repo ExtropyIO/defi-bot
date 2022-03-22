@@ -4,9 +4,6 @@ This bot is not actively maintained and has not been updated to work with newer 
 
 Extropy remains available for any smart contract development or audit work, please contact info@extropy.io or visit https://extropy.io/ .
 
-> ### TLDR:
-> * The author provides a detailed guide to coding a DeFi arbitrage bot. The bot uses flash loans to borrow assets from dYdX and sells them on 1inch exchange when profitable.
-
 ### Citation
 
 * Extropy.IO. Coding a DeFi Arbitrage Bot, Medium. Oct, 29, 2020. Accessed on: Mar, 16, 2021. [Online] Available: Part 1: https://extropy-io.medium.com/coding-a-defi-arbitrage-bot-45e550d85089, Part 2: https://extropy-io.medium.com/arbitrage-bot-part-2-97e7b710dcf
